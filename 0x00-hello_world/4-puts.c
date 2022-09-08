@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - code stuff
+ * return - 0
  */
 int main(void)
 {
