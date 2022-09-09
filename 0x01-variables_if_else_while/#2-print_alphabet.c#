@@ -1,9 +1,0 @@
-#include <stdio.h>
-/** 
- * main - does stuff
- * Return: always 0
- */
-int main(void)
-{
-	
-}
