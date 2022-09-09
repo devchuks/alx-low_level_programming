@@ -18,8 +18,8 @@ int main(void)
 				putchar((j % 10) + '0');
 				if (i > 20 || j > 19)
 				{
-					puts(',');
-					puts(' ');
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
