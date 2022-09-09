@@ -1,0 +1,11 @@
+#include <stdio.h>
+/**
+ * main - does something
+ * Return: something
+ */
+int main(void)
+{
+	printf("Size of a char
+printf("Size of a c
+	return (0);
+}
