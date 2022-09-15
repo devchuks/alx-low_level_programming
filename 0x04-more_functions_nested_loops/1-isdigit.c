@@ -12,7 +12,7 @@ int _isdigit(int c)
 	{
 		return (0);
 	}
-	else if (c >= 0)
+	else if (c >= '0')
 	{
 		return (1);
 	}
