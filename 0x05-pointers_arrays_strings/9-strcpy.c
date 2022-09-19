@@ -1,5 +1,5 @@
 #include "main.h"
-#include "2-strlen.h"
+#include "2-strlen.c"
 /**
  * _strcpy - main function to copy
  *
