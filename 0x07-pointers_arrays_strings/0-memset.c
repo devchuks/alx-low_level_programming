@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _memset - sets memory to array
  * @s: array to set
