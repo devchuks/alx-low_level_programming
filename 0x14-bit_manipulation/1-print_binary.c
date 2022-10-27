@@ -1,33 +1,37 @@
-#inclide "main.h"
-#include <stdio.h>
+#include "main.h"
 /**
- * print_binary - converts unsigned int to binary
- * @n: unsigned int
- * Return: binary
+ * print_binary - print binary
+ * @n: integer to mess with
  */
 void print_binary(unsigned long int n)
 {
+	unsigned long int i = 1;
 
-	unsigned long int n_copy = n, mask = 1;
-	int len = 0;
-
-	while (n_copy > 0)
+	i <<= ((sizeof(i) * 8) - 1);
+	if (n == 1)
 	{
-		len++;
-		n_copy >>= 1;
+		_putchar('1');
+		return;
 	}
-	len -= 1;
-
-	if (len > 0) /* create mask based on length of num */
-		mask = mask << len;
-
-	while (mask > 0) /* match each rightmost bit to see if 1 or 0 */
+	if (n == 0)
 	{
-		if (n & mask)
-			_putchar('1');
+		_putchar('0');
+		return;
+		}
+	while (i > 0)
+	{
+		if ((i & n) == 0)
+			i = i >> 1;
 		else
-			_putchar('0');
-
-		mask >>= 1;
+			break;
 	}
+	while (i > 0)
+	{
+		if ((i & n) == 0)
+			_putchar('0');
+		else
+			_putchar('1');
+		i = i >> 1;
+	}
+
 }
